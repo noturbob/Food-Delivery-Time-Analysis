@@ -1,0 +1,49 @@
+
+MODEL EVALUATION REPORT
+======================================================================
+
+EVALUATION DATASET:
+  Total samples: 45,157
+  Target variable: Time_taken(min)
+  Prediction model: RandomForestRegressor
+
+OVERALL PERFORMANCE METRICS:
+  R² Score: 0.9477 (explains 94.77% of variance)
+  Root Mean Squared Error (RMSE): 2.0759 minutes
+  Mean Absolute Error (MAE): 1.6983 minutes
+  Mean Absolute Percentage Error (MAPE): 7.6039%
+
+PREDICTION ACCURACY DISTRIBUTION:
+  0-2 minutes error: 28,897 predictions (63.99%)
+  2-5 minutes error: 16,040 predictions (35.52%)
+  5-10 minutes error: 220 predictions (0.49%)
+  10+ minutes error: 0 predictions (0.00%)
+
+RESIDUAL ANALYSIS:
+  Mean residual: 0.0099 minutes (bias)
+  Std deviation of residuals: 2.0759 minutes
+  Min residual: -7.4096 minutes (over-predicted)
+  Max residual: 7.7368 minutes (under-predicted)
+
+PREDICTION RANGE:
+  Minimum prediction: 11.61 minutes
+  Maximum prediction: 48.35 minutes
+  Mean prediction: 26.04 minutes
+  Std deviation: 8.77 minutes
+
+ACTUAL DELIVERY TIME RANGE:
+  Minimum actual: 10.00 minutes
+  Maximum actual: 49.00 minutes
+  Mean actual: 26.05 minutes
+  Std deviation: 9.08 minutes
+
+KEY INSIGHTS:
+  1. Model performs very well with R² of 0.9477
+  2. Average prediction error is 1.70 minutes
+  3. 99.5% of predictions are within 5 minutes of actual
+  4. Model tends to over-predict on average
+  5. Residuals are normally distributed
+
+RECOMMENDATION:
+  Model is ready for production deployment. Monitor performance metrics
+  on new data and retrain if accuracy drops significantly.

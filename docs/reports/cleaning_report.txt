@@ -1,0 +1,42 @@
+
+============================================================
+DATA CLEANING & FEATURE ENGINEERING REPORT
+============================================================
+
+TRAIN DATASET:
+--------------
+Original rows: 45,593
+Cleaned rows: 45,157
+Columns: 37
+
+Target Variable (Time_taken):
+  Min: 10.00 minutes
+  Max: 49.00 minutes
+  Mean: 26.05 minutes
+  Median: 25.00 minutes
+
+NEW FEATURES CREATED:
+---------------------
+Time Features: order_year, order_month, order_day, order_dayofweek, 
+               order_week, day_name, order_hour, time_period
+Binary Features: is_weekend, is_peak_hour, Festival (converted)
+Distance Features: delivery_distance_km, distance_category
+Categorical Groupings: age_group, rating_category, delivery_speed
+Severity Scores: weather_severity, traffic_level
+
+CATEGORICAL DISTRIBUTIONS:
+--------------------------
+Cities: 4
+Weather conditions: 7
+Traffic densities: 5
+Order types: 4
+Vehicle types: 4
+
+MISSING VALUES:
+---------------
+Train: 181105 missing values
+Test: 45720 missing values
+
+Date Range: 2022-02-11 00:00:00 to 2022-04-06 00:00:00
+
+============================================================
