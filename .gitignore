@@ -1,0 +1,142 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv/
+.ENV/
+.env/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
+.settings/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# PyCharm
+*.iml
+
+# VS Code
+settings.json
+launch.json
+
+# Data Files (Large)
+*.csv
+*.xlsx
+*.xls
+!data/raw\ data/*.csv
+!data/cleaned\ data/*.csv
+
+# Database Files
+*.db
+*.sqlite
+*.sqlite3
+
+# Model Artifacts (Large)
+*.pkl
+*.pickle
+ml_models/saved_models/*.pkl
+!.gitkeep
+
+# Predictions
+ml_models/predictions/*.csv
+
+# Logs
+*.log
+logs/
+
+# Temporary Files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# System Files
+$RECYCLE.BIN/
+*.lnk
+
+# Exports/Outputs
+data/exports/
+python/outputs/
+
+# Tableau Temporary Files
+*.twbx
+*.tds
+
+# Cache
+.cache/
+*.cache
+
+# Compiled Files
+*.o
+*.a
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Sphinx Documentation
+docs/_build/
+
+# IMPORTANT: Keep these tracked
+!.gitkeep
+!README.md
+!DELIVERABLES.md
+!COMPLETION_REPORT.md
+!docs/PROJECT_SUMMARY.md
+!docs/TABLEAU_DASHBOARD_GUIDE.md
+!python/*.py
+!sql/*.sql
