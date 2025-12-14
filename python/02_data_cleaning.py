@@ -35,8 +35,11 @@ def clean_delivery_data(df, is_train=True):
     if 'Delivery_person_Ratings' in df.columns:
         df['Delivery_person_Ratings'] = pd.to_numeric(df['Delivery_person_Ratings'], errors='coerce')
     
-    # Convert Time_taken to numeric
+    # Convert Time_taken to numeric - extract numbers first if needed
     if 'Time_taken(min)' in df.columns:
+        # First, extract just the numbers from the string (e.g., "30 min" -> 30)
+        df['Time_taken(min)'] = df['Time_taken(min)'].astype(str).str.extract(r'(\d+)')[0]
+        # Then convert to numeric
         df['Time_taken(min)'] = pd.to_numeric(df['Time_taken(min)'], errors='coerce')
     
     # 1. HANDLE MISSING VALUES
